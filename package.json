@@ -6,8 +6,6 @@
   "scripts": {
     "user": "cross-env ENV=STG mocha tests/scenarios/user/crud.js --reporter mochawesome --timeout 20000",
     "user-negative": "cross-env ENV=STG mocha tests/scenarios/user/negative.js --reporter mochawesome --timeout 20000",
-    "todo": "cross-env ENV=STG mocha tests/scenarios/todo/todo.js --reporter mochawesome --timeout 20000",
-    "todo-negative": "cross-env ENV=STG mocha tests/scenarios/todo/negative.js --reporter mochawesome --timeout 20000",
     "posts": "cross-env ENV=STG mocha tests/scenarios/user/posts.js --reporter mochawesome --timeout 20000"
   },
   "author": "Aleksejs Levenciks",
