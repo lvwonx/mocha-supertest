@@ -1,0 +1,28 @@
+{
+  "name": "CoE-API",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "user": "cross-env ENV=STG mocha tests/scenarios/user/crud.js --reporter mochawesome --timeout 20000",
+    "user-negative": "cross-env ENV=STG mocha tests/scenarios/user/negative.js --reporter mochawesome --timeout 20000",
+    "todo": "cross-env ENV=STG mocha tests/scenarios/todo/todo.js --reporter mochawesome --timeout 20000",
+    "todo-negative": "cross-env ENV=STG mocha tests/scenarios/todo/negative.js --reporter mochawesome --timeout 20000",
+    "posts": "cross-env ENV=STG mocha tests/scenarios/user/posts.js --reporter mochawesome --timeout 20000"
+  },
+  "author": "Aleksejs Levenciks",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "chai": "^6.2.0",
+    "cross-env": "^10.1.0",
+    "mocha": "^11.3.0",
+    "supertest": "^7.1.4"
+  },
+  "dependencies": {
+    "get-nested-value": "^1.0.3",
+    "jsonschema": "^1.5.0",
+    "mochawesome": "^7.1.4"
+  },
+  "type": "module"
+}
